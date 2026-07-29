@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="TinyPlot.Demo.MainWindow"
+        Title="TinyPlot - plotly.js for Avalonia"
+        Width="1200" Height="800"
+        Background="#f7f8fa">
+  <DockPanel>
+    <Border DockPanel.Dock="Top" Background="#1f2a44" Padding="14,10">
+      <DockPanel>
+        <Button x:Name="ThemeToggle" Content="Toggle dark theme" DockPanel.Dock="Right"/>
+        <StackPanel Orientation="Horizontal" Spacing="12">
+          <TextBlock Text="TinyPlot" Foreground="White" FontSize="18" FontWeight="Bold" VerticalAlignment="Center"/>
+          <TextBlock Text="interactive charting for Avalonia - plotly.js style" Foreground="#9fb2d8" FontSize="13" VerticalAlignment="Center"/>
+        </StackPanel>
+      </DockPanel>
+    </Border>
+    <TabControl x:Name="Tabs" Margin="8"/>
+  </DockPanel>
+</Window>

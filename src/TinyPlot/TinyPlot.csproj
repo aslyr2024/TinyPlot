@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>TinyPlot</RootNamespace>
+
+    <!-- NuGet 包元数据 -->
+    <PackageId>TinyPlot</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>TinyPlot Contributors</Authors>
+    <Description>基于 Avalonia 的交互式可视化库，API 对标 plotly.js，图表类型参照 ECharts。支持 15 种图表：折线、柱状、饼图、散点、热力图、箱线图、K线图、直方图、雷达图、地图、仪表盘、树图、关系图、3D曲面/散点。含平滑动画引擎、悬停标签、框选缩放、3D旋转等交互。</Description>
+    <PackageTags>avalonia;chart;plot;visualization;plotly;echarts;3d;heatmap;gauge;radar;tree;graph;map</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/user/TinyPlot</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>1.0.1: 修复地图悬停检测、仪表盘刻度数值显示、3D坐标轴、文字重叠自适应。
+1.0.0: 初始发布。15 种图表类型，动画引擎，3D 交互，地图渲染。</PackageReleaseNotes>
+
+    <!-- 源码链接（便于调试） -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <!-- 目标框架 -->
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="12.1.0" />
+  </ItemGroup>
+
+  <!-- 打包 README -->
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

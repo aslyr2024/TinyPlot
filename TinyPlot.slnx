@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/TinyPlot.Demo/TinyPlot.Demo.csproj" />
+    <Project Path="samples/TinyPlot.Samples/TinyPlot.Samples.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/TinyPlot/TinyPlot.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TinyPlot.RenderTests/TinyPlot.RenderTests.csproj" />
+  </Folder>
+</Solution>
